@@ -9,6 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Arvo|PT+Sans' rel='stylesheet' type='text/css' />
 
 </head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <body>
 	<div id="menu-container">
@@ -16,11 +17,9 @@
 		<p>
 			<li><a href="#top">Home</a></li>
 			<li><a href="#Introduction">Introduction</a></li>
-			<li><a href="#Programming">Programming</a></li>
 			<li><a href="#Education">Education</a></li>
-			<li><a href="#WorkExperience">Experience</a></li>
 			<li><a href="#Projects">Projects</a></li>
-			<li><a href="#Music">Music</a></li>
+			<li><a href="#About">About</a></li>
 			<li><a href="#Contact">Contact Me</a></li>
 			</p>			
 		</ul>
@@ -29,7 +28,15 @@
 	<div id="top" class="jumbotron">
 		<div class="container">
 			<h1>Eric Lin</h1><br/>
-                <p>He seems like a cool guy.</p>
+                <p id="subtitle"></p>
+
+                <script>
+                	// script to randomize subtitle
+                	var subtitles = ["He seems like a cool dude.", "What a dapper young fellow.", "It's dat boi", "Wow check this guy out!"];
+                	var rand = subtitles[Math.floor(Math.random()*subtitles.length)];
+                	$('#subtitle').text(rand);
+                </script>
+
 		</div>
 	</div>
 	
@@ -58,32 +65,6 @@
 			</div>
 		</div>
 
-
-	<div id="Programming" class="content-wrapper">
-		<h1 class="header">Programming Skills</h1>     <!--put some color gradient here to indicate proficiency-->
-			<ul id="languages" class="list-group">
-				<li class="list-group-item"><span class="badge">4</span>
-					Java</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					Python</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					HTML</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					CSS</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					Javascript</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					SQLite</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					Node.JS</li>
-				<li class="list-group-item"><span class="badge">3</span>
-					Github</li>
-
-
-			</ul>
-	</div>
-
-
 	<div id="Education" class="content-wrapper">
 		<h1 class="header">Education</h1>
 		<p>Cornell University, College of Engineering, 2017<br/>
@@ -94,13 +75,6 @@
 
 	</div>
 
-
-	<div id="WorkExperience" class="content-wrapper">
-		<h1 class="header">Work Experience</h1>
-	</div>
-
-
-
 	<div id="Projects" class="content-wrapper">
 		<h1 class="header">Projects</h1>
 		<p><a href="http://ericsuhelin.com/projects/balls">Balls, a physics experiment.</a><br/>
@@ -108,23 +82,35 @@
 	</div>
 
 
-	<div id="Music" class="content-wrapper">
-		<h1 class="header">Music</h1>
-		<p>I'm a huge music lover and a musician. I began piano at the age of 4 with Dr. Bella Oster at the European Academy of Music and Arts in Silver Spring, Maryland, and studied for 14 years with her.</p>
+	<div id="About" class="content-wrapper">
+		<h1 class="header">About</h1>
+
+		<h2>Education</h2>
+		<p>Cornell University, B.S. Computer Science '16. Master of Engineering Computer Science '17.</p>
+		<p>Thomas Jefferson High School for Science and Technology, '13</p>
+
+		<h2>Work Experience</h2>
+		<p>Facebook - Software Engineering Intern Summer 16. Epic - Software Developer Intern Summer 15. B-Line Medical Quality Assurance Intern Summer 14.</p>
+
+		<h2>Trivia</h2>
+		<p>I'm a huge music lover and a musician. I began piano at the age of 4 with Dr. Bella Oster at the European Academy of Music and Arts in Silver Spring, Maryland, and studied for 14 years under her.</p>
 
 		<p>I began clarinet at age 8, and have played in the American Youth Philharmonic Orchestra <a href="http://aypo.org/what-we-do/ayp.php">(AYP)</a>, as well as the Cornell Symphonic Orchestra <a href="http://www.arts.cornell.edu/orchestra/">(CSO)</a>. </p>
+
+		<p>I have a top recorded typing speed of 169 WPM. <b>LINK HERE</b></p>
+
+
 	</div>
 
 
 	<div id="Contact" class="content-wrapper">
 		<h1 class="header">Contact me</h1><br/>
 		<p>You can reach me at esl89@cornell.edu <a id="clipboardcopy" class="btn btn-primary">Copy to Clipboard</a></p><!--IMPLEMENT: COPY TO CLIPBOARD HERE-->
-		<p>Check out my blog <a href="http://eric780.github.io">here!</a></p>
 	</div>
 
 	
 
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
 <script src="resources/jquery.clipboard.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="index_scripts.js"></script>
