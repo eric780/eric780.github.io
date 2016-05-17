@@ -53,10 +53,16 @@ $(document).ready(function(){
 	
 });
 
-var sections = ["#top", "#Introduction", "#Education", "#Projects", "#About", "#Contact"]
+
+
+/*
+	TODO: don't fade out if clicking on currently selected section
+*/
+
+var sections = ["#top", "#Projects", "#About"]
 function hideAll() {
 	for (let section of sections) {
-		$(section).hide()
+		$(section).fadeOut()
 	}
 }
 function hideAllBut(section) {
@@ -64,7 +70,7 @@ function hideAllBut(section) {
 	$(section).fadeIn();
 }
 
-var menu_items = ["#menu-top", "#menu-intro", "#menu-education", "#menu-projects", "#menu-about", "#menu-contact"]
+var menu_items = ["#menu-top", "#menu-projects", "#menu-about"]
 for (let menu_item of menu_items) {
 	$(menu_item).click(function(e){
 		e.preventDefault();
