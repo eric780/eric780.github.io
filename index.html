@@ -15,17 +15,17 @@
 	<div id="menu-container">
 		<ul id="menu">
 		<p>
-			<li><a href="#top">Home</a></li>
-			<li><a href="#Introduction">Introduction</a></li>
-			<li><a href="#Education">Education</a></li>
-			<li><a href="#Projects">Projects</a></li>
-			<li><a href="#About">About</a></li>
-			<li><a href="#Contact">Contact Me</a></li>
+			<li><a id="menu-top" href="#top">Home</a></li>
+			<li><a id="menu-intro" href="#Introduction">Introduction</a></li>
+			<li><a id="menu-education" href="#Education">Education</a></li>
+			<li><a id="menu-projects" href="#Projects">Projects</a></li>
+			<li><a id="menu-about" href="#About">About</a></li>
+			<li><a id="menu-contact" href="#Contact">Contact Me</a></li>
 			</p>			
 		</ul>
 	</div>
 
-	<div id="top" class="jumbotron">
+	<div id="top" class="jumbotron panel">
 		<div class="container">
 			<h1>Eric Lin</h1><br/>
                 <p id="subtitle"></p>
@@ -41,7 +41,7 @@
 	</div>
 	
 
-	<div id="Introduction" class="content-wrapper row">
+	<div id="Introduction" class="content-wrapper row panel">
 		<h1 class="header">Introduction</h1>
 			<div class="row">
 				<div class="col-lg-4">
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 
-	<div id="Education" class="content-wrapper">
+	<div id="Education" class="content-wrapper panel">
 		<h1 class="header">Education</h1>
 		<p>Cornell University, College of Engineering, 2017<br/>
 		Bachelors of Science in Computer Science<br/>
@@ -75,14 +75,14 @@
 
 	</div>
 
-	<div id="Projects" class="content-wrapper">
+	<div id="Projects" class="content-wrapper panel">
 		<h1 class="header">Projects</h1>
 		<p><a href="http://ericsuhelin.com/projects/balls">Balls, a physics experiment.</a><br/>
 		<a href="http://ericsuhelin.com/projects/infect">Infect, a strategy game.</a></p>
 	</div>
 
 
-	<div id="About" class="content-wrapper">
+	<div id="About" class="content-wrapper panel">
 		<h1 class="header">About</h1>
 
 		<h2>Education</h2>
@@ -97,13 +97,15 @@
 
 		<p>I began clarinet at age 8, and have played in the American Youth Philharmonic Orchestra <a href="http://aypo.org/what-we-do/ayp.php">(AYP)</a>, as well as the Cornell Symphonic Orchestra <a href="http://www.arts.cornell.edu/orchestra/">(CSO)</a>. </p>
 
+		<p>Recently I've been attempting to pluck away at a guitar.</p>
+
 		<p>I have a top recorded typing speed of 169 WPM. <b>LINK HERE</b></p>
 
 
 	</div>
 
 
-	<div id="Contact" class="content-wrapper">
+	<div id="Contact" class="content-wrapper panel">
 		<h1 class="header">Contact me</h1><br/>
 		<p>You can reach me at esl89@cornell.edu <a id="clipboardcopy" class="btn btn-primary">Copy to Clipboard</a></p><!--IMPLEMENT: COPY TO CLIPBOARD HERE-->
 	</div>
@@ -113,6 +115,7 @@
 
 <script src="resources/jquery.clipboard.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
 <script src="index_scripts.js"></script>
 </body>
 </html>
